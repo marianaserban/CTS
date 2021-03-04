@@ -7,7 +7,7 @@ public class Main {
 		
 		System.out.print(cu.weekDay(3));
 		System.out.print(cu.weekDay2(3));
-		System.out.print(cu.weekDay2(7));
+		System.out.print(cu.weekDay2(1));
 	}
 
 }
