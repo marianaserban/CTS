@@ -3,6 +3,8 @@ package ro.ase.csie.seminar2;
 import java.math.BigDecimal;
 
 import ro.ase.csie.seminar2.solid.BankAccount;
+import ro.ase.csie.seminar2.solid.FeeBankAccount;
+import ro.ase.csie.seminar2.solid.InsuficientFundsException;
 import ro.ase.csie.seminar2.solid.Person;
 
 public class Main {
@@ -29,11 +31,29 @@ public class Main {
 		Person person=new Person("Mariana");
 		BankAccount account=new BankAccount("INGB123456", person);
 		account.deposit(100);
-		account.withdraw(50);
-		
-		account.withdraw(70);
+		try {
+			account.withdraw(50);
+			account.withdraw(70);
+		} catch (InsuficientFundsException e) {
+			System.out.println(e.getMessage());
+		}
 		
 		System.out.println(account.getBalance());
+		
+		//FeeBankAccount fb=new FeeBankAccount("INGB123456789", person);
+		
+		//polimorfism
+		account=new FeeBankAccount("INGB123456789", person);
+		account.deposit(500);
+		try {
+			account.withdraw(100);
+		} catch (InsuficientFundsException e) {
+			System.out.println(e.getMessage());
+		}
+		
+		System.out.println(account.getBalance());
+
 	}
+
 
 }
