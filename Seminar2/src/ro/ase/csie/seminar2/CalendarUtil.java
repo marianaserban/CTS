@@ -1,8 +1,11 @@
 package ro.ase.csie.seminar2;
 
+import java.text.DateFormatSymbols;
+import java.util.Locale;
+
 public class CalendarUtil {
 	
-	public String weekDay(int day) {
+	public String weekDay(int day) throws IncorectDayException {
 		if(day==1)
 			return "Sunday";
 		else if(day==2)
@@ -17,9 +20,9 @@ public class CalendarUtil {
 			return "Friday";
 		else if(day==7)
 			return "Saturday";
-		return null;
+		throw new IncorectDayException("Only 7 days in a week");
 	}
-	public String weekDay2(int day) {
+	public String weekDay2(int day) throws IncorectDayException {
 		switch(day) {
 			case 1:
 			 return "Sunday";
@@ -36,15 +39,30 @@ public class CalendarUtil {
 			case 7:
 				return "Saturday";
 			default:
-				return null;
+				throw new IncorectDayException("Only 7 days in a week");
 		}
 	}
 
-	public String weekDay3(int day) {
+	public String weekDay3(int day) throws IncorectDayException {
 		String[] week = { "Sunday", "Monday", "Tuesday", "Wednesday", "Friday", "Saturday" };
 		if (day >= 1 && day <= 7)
 			return week[day-1];
 		else
-			return null;
+			throw new IncorectDayException("Only 7 days in a week");
 	}
+	
+	public String weekDayAnother(int day) throws IncorectDayException {
+		if(day < 1 || day > 7)
+			throw new IncorectDayException("Only 7 days in a week");
+		String[] week = { "Sunday", "Monday", "Tuesday", "Wednesday", "Friday", "Saturday" };
+		return week[day-1];
+	}
+	
+	public String weekDay4(int day) throws IncorectDayException {
+		if(day < 1 || day > 7)
+			throw new IncorectDayException("Only 7 days in a week");
+		String []days=new DateFormatSymbols().getInstance(Locale.CANADA_FRENCH).getWeekdays();
+		return days[day-1];
+	}
+	
 }
