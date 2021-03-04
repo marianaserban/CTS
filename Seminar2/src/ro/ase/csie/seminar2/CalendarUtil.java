@@ -39,10 +39,12 @@ public class CalendarUtil {
 				return null;
 		}
 	}
-	
+
 	public String weekDay3(int day) {
-		String[] week= {"Sunday", "Monday","Tuesday","Wednesday","Friday","Saturday"};
-		if(day>=0 || day <= 6)return week[day];
-		else return null;
+		String[] week = { "Sunday", "Monday", "Tuesday", "Wednesday", "Friday", "Saturday" };
+		if (day >= 1 || day <= 7)
+			return week[day-1];
+		else
+			return null;
 	}
 }
