@@ -1,4 +1,4 @@
-package seminar2;
+package ro.ase.csie.seminar2;
 
 public class CalendarUtil {
 	
