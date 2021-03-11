@@ -1,6 +1,6 @@
 package ro.ase.csie.cts.seminar3;
 
-public class DebitBankAccount  extends BankAccount implements Account{
+public class DebitBankAccount  extends BankAccount implements Account, Transferable{
 	
 	public DebitBankAccount(String iban, Person person) {
 		this.iban=iban;
@@ -32,5 +32,11 @@ public class DebitBankAccount  extends BankAccount implements Account{
 
 	public Person getAccountHolder() {
 		return accountHolder;
+	}
+
+	@Override
+	public void transfer(Receivable destination, long amount) throws InsuficientFundsException {
+		this.withdraw(amount);
+		destination.deposit(amount);
 	}
 }
