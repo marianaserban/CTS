@@ -12,11 +12,21 @@ public class TestSimpleFactory {
 //		supererou=
 //				new CaracterDCComics("Batman", 150);
 //		
-		SuperErouAbstract superCaracter = 
-				FcatorySuperErou.getSuperErou(TipErou.DISNEY, "Mickey Mouse");
-		superCaracter=FcatorySuperErou.getSuperErou(TipErou.MARVEL, "Spiderman");
-		superCaracter=FcatorySuperErou.getSuperErou(TipErou.DC, "Batman");
+		boolean selectieTemaUniversala=true;
+		SuperErouAbstract superCaracter=null;
 		
+		if(selectieTemaUniversala) {
+			
+			superCaracter = 
+					FcatorySuperErou.getSuperErou(TipErou.DISNEY, "Mickey Mouse");
+			superCaracter=FcatorySuperErou.getSuperErou(TipErou.MARVEL, "Spiderman");
+			superCaracter=FcatorySuperErou.getSuperErou(TipErou.DC, "Batman");
+			
+			superCaracter.setPuncteViata(100);
+		}
+		else {
+			//folosesti caractere din tema originala a jocului
+		}
 	}
 
 }
