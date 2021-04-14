@@ -5,8 +5,9 @@ public class DonaldDuck implements ActiuniDisney{
 	public static final String denumire="Donald Duck";
 	int power;
 
+	@Override
 	public int getPower() {
-		return power;
+		return this.power;
 	}
 
 	public void setPower(int power) {
@@ -35,6 +36,11 @@ public class DonaldDuck implements ActiuniDisney{
 	@Override
 	public void jump() {
 		System.out.println("Jump!");
+	}
+
+	@Override
+	public String getNume() {
+		return denumire;
 	}
 
 }
