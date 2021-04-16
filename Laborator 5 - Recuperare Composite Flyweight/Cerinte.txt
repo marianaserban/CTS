@@ -12,13 +12,17 @@ nodul frunza si nodul composite trebuie sa aiba aceeasi interfata
 
 
 
-2. Pentru a gestiona eficient (din punct de vedere al memoriei) scenariile in care jucatorii interactioneaza cu 
+2. Pentru a *gestiona eficient (din punct de vedere al memoriei)* scenariile in care jucatorii interactioneaza cu 
 mai multe caractere controlate de calculator
-- colectia de caractere coordonate de calculator contine elemente de acelasi fel (aceleasi modele 3D)
+- colectia de caractere coordonate de calculator *contine elemente de acelasi fel* (aceleasi modele 3D)
 - spatiul ocupat de un model 3D este semnificativ
-- generarea unui astfel de scenariu necesita un spatiu semnificativ de memorie pentru client
-- modelele 3D sunt afisate pe ecran la coordonate diferite si pot avea texturi de culori diferite
+- generarea unui astfel de scenariu *necesita un spatiu semnificativ de memorie* pentru client
+- modelele 3D sunt ~afisate pe ecran la coordonate diferite si pot avea texturi de culori diferite~
 - trebuie gasita o solutie eficienta privind gestiunea acestor situatii
 
 
+modelul 3d este elementul comun
+multe obiecte similare afisate pe ecran
+doar ca ele sunt afisate pe ecran la coord dif si pot avea texturi dif
+in flyweight intai se spune ce e comun si apoi ce e diferit
 
