@@ -1,4 +1,4 @@
-package ro.ase.csie.gts.g1087.dp.apater.banca;
+package ro.ase.csie.gts.g1087.dp.adapter.banca;
 
 public class TestAdapter {
 
