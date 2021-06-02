@@ -1,0 +1,13 @@
+Platforma web pentru e-book share-ing
+
+Scenariu: Dorim sa utilizam o libraria externa "google books". In prezent, platforma 
+contine ce fac parte din framework-ul propriu
+
+Avantaje:
+-respectam Open/Closed Principle, clasele existente nu sunt modificate pentru 
+a fi utilizate intr-un nou context
+-realizam un layer intermediar ce nu afecteaza logica aplicatiei
+
+Dezavantaje:
+-creste complexitatea codului
+-necesita mostenirea multipla sau lucurul cu interfete

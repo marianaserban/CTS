@@ -1,0 +1,13 @@
+Platforma web pentru e-book share-ing
+
+Scenariu: Crearea si initializare obiectelor de tip  carte este un proces costisitor. Dorim astfel 
+ca la listarea cartilor in dashboard sa afisam doar titlul, autorul si rating-ul, iar la selectarea 
+unei carti sa fie afisate toate informatiile din baza de date.
+
+Avantaje:
+-respectam open/closed principle, putem introduce noi proxy-uri fara sa schimbam clasa
+-controlam fluxul de date fara sa afectam experienta clientului, 
+
+Dezavantaje:
+-creste complexitatea codului
+-raspunsul serverului poate fi intarziat

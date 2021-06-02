@@ -1,0 +1,16 @@
+Platforma web pentru e-book share-ing
+
+Scenariu: Dorim sa realizam un loading screen care sa fie compus din carti desenate 2D,
+de culori diferite, afisate pe ecran la coordonate diferite. Spatiul ocupat de un model
+de carte este semnificativ. Trebuie gasita o solutie eficienta privind gestiunea 
+costisitoare a obiectelor. Culorile disponibile pentru obiecte sunt: 	ROSU, VERDE, ALBASTRU, GALBEN
+
+
+Avantaje:
+-se reduce memoria ocupata
+-imbunatateste performanta datorita unui numar mai mic de obiecte complexe
+
+Dezavantaje:
+-efectele sunt vizibile atunci cand  numarul de obiecte este mare, ceea ce pentru
+un loading screen nu este foarte rentabil
+-creste complexitatea

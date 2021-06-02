@@ -1,0 +1,15 @@
+Platforma web pentru e-book share-ing
+
+Scenariu: Crearea unui cont in aplicatie implica completarea obligatorie a doua campuri: email si parola.
+Ulterior, utilizatorul isi poate completa pagina de profil prin adaugarea urmatoarelor campuri:
+nume utilizator, nume, prenume, descriere, poza profil.
+
+Avantaje:
+-obiectul complex utilizator este creat independent de atributele care il compun.
+Profilul utilizatorului poate sa contina toate detaliile sau doar pe cele obligatorii
+-algoritmul de realizarea a profilului este flexibil deoarece clientul alege
+ce detalii sa completeze
+
+Dezavantaje:
+-putem omite atribute importante in creearea obiectului
+-duplicarea detaliata a codului deoarece builderul trebuie sa copieze toate atributele clasei profil si sa creeze metodele set

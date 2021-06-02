@@ -1,0 +1,14 @@
+Platforma web pentru e-book share-ing
+
+Scenariu: Utilizatorul poate incarca pe platforma carti asupra carora poate decide daca vor fi publice 
+sau private. Pentru ambele tipuri de documente este necesara completarea unor campuri precum titlu, autor, etc.
+Cartile private vor contine, in plus, lista utilizatorilor care au acces pe carte
+
+Avantaje:
+-obiectele create au in comun interfata InterfataCarte
+-tipurile diferite de carti pot fi gestionate prin interfata comuna ce favorizeaza introducerea de noi tipuri
+de obiecte ulterior
+
+Dezavantaje:
+-daca dorim sa adaugam un nou model de carte, pe langa crearea noii clase, trebuie modificata clasa FactoryCarte, incalcam open/closed principle
+-nu pot fi generate obiecte noi

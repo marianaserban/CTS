@@ -1,0 +1,14 @@
+Platforma web pentru e-book share-ing
+
+Scenariu: Utilizatorul poate customiza in timpul citirii pdf-ul astfel:
+-poate schimba dimensiunea fontului
+-poate sa adauge o culoare de background
+
+Avantaje:
+-extinderea functionalitatii a unui obiect particular, dinamic, la run-time
+-decorarea este transparenta pentru utilizator si nu impune limite privind un
+numar maxim de decorari
+
+Dezavantaje:
+-poate fi greu de mentinut
+-poate complica procesul de instantiere

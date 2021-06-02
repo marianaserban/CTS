@@ -1,0 +1,13 @@
+Platforma web pentru e-book share-ing
+
+Scenariu: Dorim sa realizam un loading screen in care sa apara mai multe instante
+ale aceluiasi model de carte. Crearea modelului este un proces costisitor ce presupune
+incarcarea si generarea modelului.
+
+Avantaje:
+-crearea rapida de obiecte identice
+-putem reutiliza modelul in proiecte viitoare
+
+Dezavantaje:
+-nu aveam o variabilitate foarte mare a modelelor
+-poate creste complexitatea sistemului

@@ -1,0 +1,15 @@
+Platforma web pentru e-book share-ing
+
+Mecanism de logging unic
+-intrucat framework-ul React.js este bazat pe componente, dorim sa gestionam mesajele provenite de la fiecare
+componenta prin intermediul unei instante unice
+-nu conteaza de cate ori va fi folosita, instanta se va crea o singura data
+-mesajele vor fi scrise intr-un fisier .txt
+
+Avantaje
+-gestionam centralizat toate log-urile printr-o instanta unica
+- crearea obiectului se face atunci cand este necesar
+
+Dezavantaje
+-pe termen lung poate fi dificil de modificat sistemul de logging
+-pe termen lung poate afecta performanta aplicatiei
